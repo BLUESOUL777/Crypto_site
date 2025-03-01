@@ -5,7 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+.sub-headline{
+    font-size: 32px;
+}
 :root{
    --black:#000;
    --white:#ffffff;
