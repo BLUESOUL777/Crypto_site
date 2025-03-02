@@ -103,7 +103,7 @@
             position: absolute;
             bottom: 20px;
             right: 20px;
-            width: 300px; /* Increased width to make the popup broader */
+            width: 300px; 
             padding: 15px;
             background: #000000;
             border-radius: 10px;
@@ -213,13 +213,13 @@
             const coins = await fetchCryptoList();
             ["crypto1", "crypto2", "crypto3", "crypto4", "alertCrypto"].forEach(id => {
                 const dropdown = document.getElementById(id);
-                dropdown.innerHTML = "<option value=''>None</option>"; // Add "None" option
+                dropdown.innerHTML = "<option value=''>None</option>"; 
                 coins.forEach(coin => dropdown.add(new Option(coin.name, coin.id)));
             });
             document.getElementById("crypto1").value = "bitcoin";
             document.getElementById("crypto2").value = "ethereum";
-            document.getElementById("crypto3").value = ""; // Default to None
-            document.getElementById("crypto4").value = ""; // Default to None
+            document.getElementById("crypto3").value = ""; 
+            document.getElementById("crypto4").value = ""; 
         }
 
         async function fetchCryptoHistory(coin, days) {
