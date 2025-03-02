@@ -14,6 +14,16 @@ bar.onclick = (e) => {
 }
 
 
+
+//splash
+setTimeout(() => {
+    document.getElementById("flash-screen").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("flash-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+    }, 1000);
+}, 3000);
+
 // carousel
 const carouselContainer = document.querySelector(".carouselContainer");
 const eachCarousel = document.querySelector(".eachCarousel").clientWidth;
