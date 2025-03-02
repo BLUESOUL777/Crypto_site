@@ -22,7 +22,7 @@ setTimeout(() => {
         document.getElementById("flash-screen").style.display = "none";
         document.getElementById("main-content").style.display = "block";
     }, 1000);
-}, 3000);
+}, 1000);
 
 // carousel
 const carouselContainer = document.querySelector(".carouselContainer");
