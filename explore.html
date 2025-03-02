@@ -13,6 +13,18 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.select-group button {
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 0.7em 1.5em;
+}
+
 
         body, h2, h3, h4, button, p {
     color: #FFD700 !important;
@@ -173,6 +185,8 @@
         <div class="select-group">
             <button onclick="updateChart()">Compare</button>
             <button onclick="showAlertPopup()">Set Price Alert</button>
+            <button onclick="window.location.href='index.html'">Home</button>
+
         </div>
     </div>
 
