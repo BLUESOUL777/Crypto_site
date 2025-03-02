@@ -13,11 +13,11 @@
 }
 :root{
    --black:#000;
-   --white:#eefa14;
+   --white: #FFD700;
    --lightgrey:#f1f1f1;
    --darkblue:#000000;
-   --primarycolor:#f2ec3d;
-   --secondarycolor:#e5ef56;
+   --primarycolor:#f2da3d;
+   --secondarycolor:#f5ef56;
    --lightDark:#252408;
    --darkText:#aeb483;
 }
