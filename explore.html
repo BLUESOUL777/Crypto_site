@@ -6,13 +6,16 @@
     <title>Explore the market</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+        body, h2, h3, h4, button, p {
+    color: #FFD700 !important;
+}
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7fc;
+            background-color: #000000;
             color: #333;
-            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
 
@@ -82,13 +85,15 @@
             right: 20px;
             width: 300px; /* Increased width to make the popup broader */
             padding: 15px;
-            background: #fff;
+            background: #000000;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(220, 184, 7, 0.1);
             font-size: 14px;
             cursor: grab;
             z-index: 100;
             transition: all 0.3s ease;
+            border: 0.5px solid yellow
+
         }
 
         #popup span {
