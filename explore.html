@@ -15,10 +15,6 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        body.dark {
-            background-color: #333;
-            color: #f4f4f4;
-        }
 
         #cryptoChart {
             width: 60%;
@@ -95,11 +91,6 @@
             transition: all 0.3s ease;
         }
 
-        body.dark #popup {
-            background: #333;
-            color: #f4f4f4;
-        }
-
         #popup span {
             font-size: 20px;
             color: red;
@@ -113,10 +104,6 @@
             transition: color 0.3s ease;
         }
 
-        body.dark #popup h4 {
-            color: #f4f4f4;
-        }
-
         #popup input, #popup select {
             width: 100%;
             padding: 10px;
@@ -125,11 +112,6 @@
             border: 1px solid #ddd;
         }
 
-        body.dark #popup input, body.dark #popup select {
-            background: #444;
-            color: #fff;
-            border-color: #666;
-        }
 
         #popup button {
             background-color: #28a745;
@@ -148,25 +130,9 @@
             display: none;
         }
 
-        #darkModeToggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #darkModeToggle:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
-    <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <div class="container">
         <h2>Crypto Price Chart</h2>
         <canvas id="cryptoChart"></canvas>
@@ -310,9 +276,7 @@
             isPopupBeingDragged = false;
         });
 
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark");
-        }
+        
     </script>
 </body>
 </html>
