@@ -883,3 +883,12 @@ footer{
     padding: 0.7em 1.5em;
     background-color: #000;
 }
+.Subscribe{
+    background-color: var(--black) !important;
+
+    padding: 20px;
+    border: 2px solid white !important;
+    color: var(--white) !important;
+    border-radius: 33px;
+    font-size: 1.1em;
+}
