@@ -4,11 +4,23 @@
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
+
+:root{
+    --black:#000;
+    --white: #FFD700;
+    --lightgrey:#f1f1f1;
+    --darkblue:#000000;
+    --primarycolor:#f2da3d;
+    --secondarycolor:#f5ef56;
+    --lightDark:#252408;
+    --darkText:#aeb483;
+ }
+
 body{
-    background-color: #001e4d;
+    background-color: var(--black);
 }
 .app{
-    background-color: white;
+    background-color:var(--lightDark);
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -17,7 +29,7 @@ body{
 }
 .app h1 {
     font-size: 25px;
-    color: #001e4d;
+    color: var(--white);
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom:  30px;
@@ -29,7 +41,7 @@ body{
 
 .quiz h2{
     font-size: 18px;
-    color: #001e4d;
+    color: var(--primarycolor);
     font-weight: 600;
 }
 
@@ -55,7 +67,7 @@ body{
     cursor: no-drop;
 }
 #next-btn{
-    background-color: #001e4d;
+    background-color: var(--darkblue);
     color: white;
     font-weight: 500;
     padding: 10px;
@@ -75,7 +87,7 @@ body{
 }
 
 #homedirect, #leaderboard {
-    background-color: #001e4d;;
+    background-color: var(--darkblue);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -88,9 +100,13 @@ body{
 }
 
 .btn:hover, #next-btn:hover, #homedirect:hover, #leaderboard:hover {
-    background-color: #001e4d;
+    background-color: var(--white);
 }
 
 #homedirect, #leaderboard {
     display: inline-block;
+}
+
+#homedirect{
+    margin-right: 20px;
 }

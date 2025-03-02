@@ -1,7 +1,7 @@
 /* Apply consistent styling */
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #001e4d;
+    background-color: var(--darkblue);
     color: #ffffff;
     text-align: center;
     margin: 0;
@@ -9,13 +9,13 @@ body {
 }
 :root{
     --black:#000;
-    --white:#ffffff;
+    --white: #FFD700;
     --lightgrey:#f1f1f1;
-    --darkblue:#0d102c;
-    --primarycolor:#3d51f2;
-    --secondarycolor:#5670ef;
-    --lightDark:#080A25;
-    --darkText:#8388B4;
+    --darkblue:#000000;
+    --primarycolor:#f2da3d;
+    --secondarycolor:#f5ef56;
+    --lightDark:#252408;
+    --darkText:#aeb483;
  }
 
 /* Headings */
@@ -26,7 +26,7 @@ h1 {
 
 /* Leaderboard container */
 .leaderboard-container {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--white);
     padding: 20px;
     border-radius: 10px;
     width: 80%;
@@ -37,8 +37,8 @@ h1 {
 
 /* Style buttons to match quiz page */
 .btn, #home-btn, #retry-btn #clear-btn {
-    background-color: white;
-    color: #001e4d;
+    background-color: var(--darkblue);
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -50,7 +50,7 @@ h1 {
 }
 
 .btn:hover, #home-btn:hover, #retry-btn:hover #clear-btn {
-    background-color: #001e4d;
+    background-color: var(--white);
 }
 
 /* Leaderboard table styling */
@@ -66,7 +66,8 @@ th, td {
 }
 
 th {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--white);
+    font-size: 1.2em;
 }
 
 
@@ -77,6 +78,9 @@ th {
     width: 12vw;
     overflow: hidden;
     transform: translateY(10px);
+    background-color: var(--lightDark);
+    color: white;
+    font-size: 1.1em;
 }
 #home-btn{
     padding: 12px;
@@ -86,6 +90,7 @@ th {
     overflow: hidden;
     text-align: center;
     justify-items: center;
+    background-color: var(--lightDark);
 }
 
 .lower{
@@ -95,12 +100,10 @@ th {
     margin: auto;
 }
 #home-btn:hover{
-    background-color: var(--darkblue);
-    color: var(--lightgrey);
+    background-color: var(--white);
 }
 #clear-btn:hover{
-    background-color: var(--darkblue);
-    color: var(--lightgrey);
+    background-color: var(--white);
 }
 
 @media screen and (max-width:450px) {
