@@ -74,23 +74,52 @@ th {
 #clear-btn{
     padding: 12px;
     border-radius: 10px;
-    height: 6vh;
-    width: 12vw;
+    
     overflow: hidden;
     transform: translateY(10px);
     background-color: var(--lightDark);
     color: white;
     font-size: 1.1em;
+        background-color: transparent;
+        color: var(--white);
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+        border-image: initial;
+        border-radius: 50px;
+        padding: 0.7em 1.5em;
+        background-color: #000;
+        margin-right: 10vw;
+    
+
 }
 #home-btn{
     padding: 12px;
     border-radius: 10px;
-    height: 6vh;
-    width:8vw;
+    align-items: center;
+    align-content: center;
+    align-self: center;
     overflow: hidden;
     text-align: center;
     justify-items: center;
-    background-color: var(--lightDark);
+   
+        background-color: transparent;
+        color: var(--white);
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(255, 255, 255);
+        border-image: initial;
+        border-radius: 50px;
+        padding: 0.7em 1.5em;
+        background-color: #000;
+        color: var(--white);
+
+transform: translateY(10px);
+        
 }
 
 .lower{
