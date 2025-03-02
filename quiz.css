@@ -5,10 +5,22 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #001e4d;
+    background-color: var(--darkblue);
 }
+
+:root{
+    --black:#000;
+    --white:#ffffff;
+    --lightgrey:#f1f1f1;
+    --darkblue:#0d102c;
+    --primarycolor:#3d51f2;
+    --secondarycolor:#5670ef;
+    --lightDark:#080A25;
+    --darkText:#8388B4;
+ }
+
 .app{
-    background-color: white;
+    background-color:var(--primarycolor);
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -17,7 +29,7 @@ body{
 }
 .app h1 {
     font-size: 25px;
-    color: #001e4d;
+    color: var(--lightDark);
     font-weight: 600;
     border-bottom: 1px solid #333;
     padding-bottom:  30px;
@@ -29,7 +41,7 @@ body{
 
 .quiz h2{
     font-size: 18px;
-    color: #001e4d;
+    color: var(--lightDark);
     font-weight: 600;
 }
 
@@ -55,7 +67,7 @@ body{
     cursor: no-drop;
 }
 #next-btn{
-    background-color: #001e4d;
+    background-color: var(--lightDark);
     color: white;
     font-weight: 500;
     padding: 10px;
@@ -75,7 +87,7 @@ body{
 }
 
 #homedirect, #leaderboard {
-    background-color: #001e4d;;
+    background-color:var(--darkblue);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -93,4 +105,8 @@ body{
 
 #homedirect, #leaderboard {
     display: inline-block;
+}
+#homedirect{
+    background-color: var(--darkblue);
+    padding: 10px 20px;
 }
