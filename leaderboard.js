@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateLeaderboard() {
         let scores = getLeaderboard();
-        scores.sort((a, b) => b.score - a.score); // Sort by highest score
+        scores.sort((a, b) => b.score - a.score); 
 
-        leaderboardTable.innerHTML = ""; // Clear table
+        leaderboardTable.innerHTML = ""; 
 
         scores.forEach((entry, index) => {
             let row = `<tr>
