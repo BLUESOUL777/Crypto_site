@@ -1,4 +1,4 @@
-/* Apply consistent styling */
+
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: var(--darkblue);
@@ -18,13 +18,12 @@ body {
     --darkText:#aeb483;
  }
 
-/* Headings */
+
 h1 {
     font-size: 32px;
     margin-bottom: 20px;
 }
 
-/* Leaderboard container */
 .leaderboard-container {
     background: var(--white);
     padding: 20px;
@@ -35,7 +34,6 @@ h1 {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
 
-/* Style buttons to match quiz page */
 .btn, #home-btn, #retry-btn #clear-btn {
     background-color: var(--darkblue);
     color: white;
@@ -53,7 +51,6 @@ h1 {
     background-color: var(--white);
 }
 
-/* Leaderboard table styling */
 table {
     width: 100%;
     border-collapse: collapse;
