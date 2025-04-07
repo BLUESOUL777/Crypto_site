@@ -53,17 +53,15 @@ const nextButton = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 let playerName = "";
-
-// Ask for username before starting the quiz
 function getPlayerName() {
     playerName = prompt("Enter your name to start the quiz:");
     if (!playerName || playerName.trim() === "") {
-        playerName = "Anonymous"; // Default if no name is entered
+        playerName = "Anonymous";
     }
 }
 
 function startQuiz() {
-    getPlayerName(); // Ask for username before starting
+    getPlayerName();
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
@@ -143,11 +141,10 @@ function showScore() {
 function saveScore() {
     let leaderboard = JSON.parse(localStorage.getItem("cryptoLeaderboard")) || [];
     leaderboard.push({ name: playerName, score: score });
-    leaderboard.sort((a, b) => b.score - a.score); // Rank by highest score
+    leaderboard.sort((a, b) => b.score - a.score);
     localStorage.setItem("cryptoLeaderboard", JSON.stringify(leaderboard));
 }
 
-// Home and Leaderboard Buttons
 document.getElementById('homedirect').addEventListener('click', () => {
     window.location.href = '../index.html';
 });
