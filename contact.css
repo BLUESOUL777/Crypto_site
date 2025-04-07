@@ -21,7 +21,7 @@
 }
 
 #flash-screen img {
-    width: 200px; /* Adjust size as needed */
+    width: 200px;
     height: auto;
 }
 .logo{
@@ -47,7 +47,7 @@ body{
     color: var(--white);
 }
 
-/* Header */
+
 header{
     width: 90%;
     max-width: 1200px;
@@ -137,7 +137,7 @@ header{
     }
 }
 
-/* Hero page */
+
 .headline{
     color: var(--white);
     font-size: 3rem;
@@ -181,7 +181,7 @@ header{
     }
 }
 
-/* carousel */
+
 .carouselContainer{
     display: grid;
     gap: 10px;
@@ -285,7 +285,6 @@ header{
 
 }
 
-/* Processes */
 .processessDesc{
     order: 0;
 }
@@ -307,8 +306,6 @@ header{
     color: var(--white);
     margin-bottom: 1em;
 }
-
-/* Markets */
 
 .marketDesc{
     order: 0;
@@ -387,7 +384,6 @@ header{
   text-transform: uppercase;
 }
 
-/* Dashboard */
 .dashboardDesc{
     order: 0;
 }
@@ -407,8 +403,6 @@ header{
     }
 }
 
-
-/* Funds */
 .fundSection{
     width: 90%;
     max-width: 1100px;
@@ -448,8 +442,6 @@ header{
         margin-top: 1em;
     }
 }
-
-/* Newsletter */
 
 .newsletter{
     border: 1px solid #fff;
@@ -496,7 +488,6 @@ header{
     }
 }
 
-/* Join Now */
 footer{
     background-color: var(--lightDark);
     margin-top: 5em;
@@ -683,7 +674,6 @@ footer{
     }
 }
 
-/* About Us */
 .aboutusDesc{
     order: 0;
 }
@@ -708,7 +698,6 @@ footer{
     font-size: 2rem;
 }
 
-/* offer */
 .services{
     width: 90%;
     max-width: 1100px;
@@ -748,8 +737,6 @@ footer{
     font-size: 1.5rem;
 }
 
-/* video */
-
 .videoSection{
   display: grid;
 }
@@ -779,8 +766,6 @@ footer{
     transform: translate(-50%,-50%);
     cursor: pointer;
 }
-
-/* Team */
 
 .teamSection{
     margin-top: 5em;
